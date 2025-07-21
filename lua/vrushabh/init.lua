@@ -45,9 +45,8 @@ autocmd({"BufWritePre"}, {
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
---[[
 autocmd('LspAttach', {
-    group = ThePrimeagenGroup,
+    group = vrushabhGroup,
     callback = function(e)
         local opts = { buffer = e.buf }
         vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
@@ -62,7 +61,6 @@ autocmd('LspAttach', {
         vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
     end
 })
---]]
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
