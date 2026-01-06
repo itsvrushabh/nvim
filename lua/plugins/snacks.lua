@@ -79,6 +79,8 @@ return {
         { "<leader>fc", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Config Files" },
         { "<leader>fg", function() Snacks.picker.git_files() end, desc = "Git Files" },
         { "<leader>fp", function() Snacks.picker.projects() end, desc = "Projects" },
+        { "<leader>fs", function() vim.cmd("w") Snacks.notify.info("File Saved", { title = "System" }) end, desc = "Save" },
+        { "<leader>fS", function() vim.cmd("wa") Snacks.notify.info("All File Saved", { title = "System" }) end, desc = "Save All" },
 
         -- ════════════════════════════════════════════════════════════════════
         -- <leader>g = Git
