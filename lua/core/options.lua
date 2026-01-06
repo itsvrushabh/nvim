@@ -75,17 +75,17 @@ vim.opt.guifont = "monospace:h17"
 -- Filetype Detection
 -- ============================================================================
 vim.filetype.add({
-    extension = {
-        env = "dotenv",
-    },
-    filename = {
-        [".env"] = "dotenv",
-        ["env"] = "dotenv",
-    },
-    pattern = {
-        ["[jt]sconfig.*.json"] = "jsonc",
-        ["%.env%.[%w_.-]+"] = "dotenv",
-    },
+	extension = {
+		env = "dotenv",
+	},
+	filename = {
+		[".env"] = "dotenv",
+		["env"] = "dotenv",
+	},
+	pattern = {
+		["[jt]sconfig.*.json"] = "jsonc",
+		["%.env%.[%w_.-]+"] = "dotenv",
+	},
 })
 -- Leader Keys
 vim.opt.guicursor = ""
@@ -95,7 +95,5 @@ vim.opt.expandtab = true
 vim.opt.scrolloff = 8
 vim.opt.isfname:append("@-@")
 vim.opt.colorcolumn = "80"
-vim.cmd [[ set noswapfile ]]
-vim.cmd [[ set termguicolors ]]
-
-
+vim.cmd([[ set noswapfile ]])
+vim.cmd([[ set termguicolors ]])
