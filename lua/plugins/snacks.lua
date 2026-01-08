@@ -279,7 +279,7 @@ return {
 			desc = "File Saved",
 		},
 		{
-			"<C-s>",
+			"<C-s>S",
 			function()
 				vim.cmd("wa")
 				Snacks.notify.info("All File Saved", { title = "System" })
