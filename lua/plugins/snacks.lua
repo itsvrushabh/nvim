@@ -268,23 +268,23 @@ return {
 			function()
 				Snacks.picker.projects()
 			end,
-			desc = "Projects",
+			desc = "projects",
 		},
 		{
-			"<leader>fs",
+			"<C-s>",
 			function()
 				vim.cmd("w")
 				Snacks.notify.info("File Saved", { title = "System" })
 			end,
-			desc = "Save",
+			desc = "File Saved",
 		},
 		{
-			"<leader>fS",
+			"<C-s>",
 			function()
 				vim.cmd("wa")
 				Snacks.notify.info("All File Saved", { title = "System" })
 			end,
-			desc = "Save All",
+			desc = "All Files Saved",
 		},
 
 		-- ════════════════════════════════════════════════════════════════════
@@ -548,7 +548,7 @@ return {
 			desc = "Resume Last",
 		},
 		{
-			"<C-s>",
+			"<C-g>",
 			function()
 				Snacks.picker.grep_buffers()
 			end,
