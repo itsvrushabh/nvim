@@ -176,27 +176,15 @@ return {
 				ensure_installed = {
 					-- Language Servers
 					"lua_ls",
-					-- "gopls", "zls", "ts_ls",
 					"rust-analyzer",
-					-- "intelephense", "bashls",
-					"pyright",
-					-- "cssls", "html", "jsonls", "yamlls",
 					-- Linters
-					-- "eslint_d",
 					"luacheck",
-					-- "golangci-lint", "shellcheck",
-					-- "markdownlint", "yamllint",
-					"jsonlint",
-					-- "htmlhint", "stylelint",
-					-- "phpstan", "ruff", "mypy",
 					-- Formatters
 					"stylua",
 					-- "goimports",
-					"prettier",
 					"black",
 					"isort",
 					"shfmt",
-					-- "pint",
 				},
 			})
 		end,
