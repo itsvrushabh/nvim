@@ -1,3 +1,5 @@
+--- Conform.nvim Configuration
+--- Lightweight yet powerful formatter plugin.
 return {
 	"stevearc/conform.nvim",
 	opts = {

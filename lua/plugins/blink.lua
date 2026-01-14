@@ -1,3 +1,5 @@
+--- Blink.cmp Configuration
+--- A high-performance completion engine.
 return {
 	"saghen/blink.cmp",
 	-- optional: provides snippets for the snippet source

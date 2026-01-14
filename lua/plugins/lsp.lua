@@ -1,3 +1,5 @@
+--- LSP Configuration
+--- Sets up language servers via nvim-lspconfig and Mason.
 return {
 	{
 		"neovim/nvim-lspconfig",

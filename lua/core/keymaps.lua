@@ -1,3 +1,6 @@
+--- Keymaps Configuration
+--- Sets the leader key and disables some built-in plugins/providers.
+
 -- ============================================================================
 -- Leader Keys
 -- ============================================================================

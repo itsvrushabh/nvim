@@ -1,3 +1,6 @@
+--- Neovim Options Configuration
+--- Sets up global editor options for UI, search, indentation, splits, etc.
+
 -- ============================================================================
 -- Editor Behavior
 -- ============================================================================

@@ -1,3 +1,6 @@
+--- Autopairs and Indent Blankline Configuration
+--- Sets up nvim-autopairs for automatic closing of pairs
+--- and indent-blankline.nvim for indentation guides.
 return {
 	{
 		"windwp/nvim-autopairs",

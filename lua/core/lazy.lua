@@ -1,3 +1,6 @@
+--- Lazy.nvim Configuration
+--- Bootstraps the lazy.nvim plugin manager and loads plugins.
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.uv.fs_stat(lazypath) then

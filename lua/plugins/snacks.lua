@@ -1,3 +1,5 @@
+--- Snacks.nvim Configuration
+--- A collection of small utilities and plugins for Neovim.
 return {
   "folke/snacks.nvim",
   priority = 1000,

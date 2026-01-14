@@ -1,3 +1,7 @@
+--- Autocommands Configuration
+--- Defines automatic actions for various events like file operations,
+--- UI changes, and text highlighting.
+
 local api = vim.api
 
 -- don't auto comment new line

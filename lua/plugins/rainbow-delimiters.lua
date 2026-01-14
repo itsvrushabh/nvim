@@ -1,3 +1,5 @@
+--- Rainbow Delimiters Configuration
+--- Adds rainbow highlighting to delimiters.
 return {
 	"HiPhish/rainbow-delimiters.nvim",
 	dependencies = "nvim-treesitter/nvim-treesitter",
