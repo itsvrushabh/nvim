@@ -27,8 +27,18 @@ The configuration is organized into core settings and plugins:
 - **Rainbow Delimiters**: Colored parentheses/brackets.
 - **Autopairs**: Auto-closing pairs.
 
+.tmux-conf.local --> tmux.md
 ## Tmux Integration
 
 To run with tmux:
 1. Install tmux: `brew install tmux` or `apt install tmux`.
 2. Copy `.tmux.conf` to your home directory (`~/`).
+
+.bashrc --> bashrc.md
+##
+Tool Combo,Action,Result
+fzf + bat,CTRL + T,Search files; a bat preview appears on the right for each file.
+fzf + history,CTRL + R,Search your command history with a fuzzy filter.
+zoxide + fzf,zi,Interactively select a frequent directory from an fzf list.
+eza + icons,ls,Lists files with Nerd Font icons and Git status (if in a repo).
+fd + fzf,ALT + C,Fuzzy-find a sub-directory and jump into it immediately.
