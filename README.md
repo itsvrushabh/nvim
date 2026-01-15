@@ -42,3 +42,6 @@ fzf + history,CTRL + R,Search your command history with a fuzzy filter.
 zoxide + fzf,zi,Interactively select a frequent directory from an fzf list.
 eza + icons,ls,Lists files with Nerd Font icons and Git status (if in a repo).
 fd + fzf,ALT + C,Fuzzy-find a sub-directory and jump into it immediately.
+
+#Install Commands
+sudo pacman -S fzf zoxide bat fd eza tmux neovim git
