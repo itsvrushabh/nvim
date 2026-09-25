@@ -1,3 +1,2 @@
---- Entry point for Neovim configuration.
---- Loads the core configuration module.
-require("core")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
