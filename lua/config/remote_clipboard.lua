@@ -133,7 +133,7 @@ function M.setup()
           if last_copy[register] and vim.deep_equal(lines, last_copy[register][1]) then
             return vim.deepcopy(last_copy[register])
           end
-          return lines
+          return { lines, "v" }
         end
       end
 
