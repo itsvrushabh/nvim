@@ -23,7 +23,7 @@ return {
 						local theme_plugin_name = nil
 						for _, spec in ipairs(theme_spec) do
 							if spec[1] and spec[1] ~= "LazyVim/LazyVim" then
-								theme_plugin_name = spec.name or spec[1]
+								theme_plugin_name = spec.name or (spec[1] and spec[1]:match("/([%w_.-]+)$")) or spec[1]
 								break
 							end
 						end
@@ -78,10 +78,6 @@ return {
 									if vim.fn.filereadable(transparency_file) == 1 then
 										vim.defer_fn(function()
 											vim.cmd.source(transparency_file)
-
-											-- Trigger UI updates for various plugins
-											vim.api.nvim_exec_autocmds("ColorScheme", { modeline = false })
-											vim.api.nvim_exec_autocmds("VimEnter", { modeline = false })
 
 											-- Final redraw
 											vim.cmd("redraw!")
