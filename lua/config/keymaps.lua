@@ -13,11 +13,3 @@ map("n", "<leader>wp", function()
     vim.cmd("wincmd w")
   end
 end, { desc = "Pick Window" })
-
--- Visual mode line bubbling (drag selected lines up/down)
-map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move lines down" })
-map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move lines up" })
-
--- Keep visual selection when indenting
-map("v", "<", "<gv", { desc = "Indent left and keep selection" })
-map("v", ">", ">gv", { desc = "Indent right and keep selection" })
