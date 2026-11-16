@@ -8,7 +8,10 @@ local map = vim.keymap.set
 map("n", "<leader>wq", "<C-w>c", { desc = "Close Window" })
 map("n", "<leader>wp", function()
   if Snacks and Snacks.picker and Snacks.picker.util then
-    Snacks.picker.util.pick_win()
+    local win = Snacks.picker.util.pick_win()
+    if win and vim.api.nvim_win_is_valid(win) then
+      vim.api.nvim_set_current_win(win)
+    end
   else
     vim.cmd("wincmd w")
   end
